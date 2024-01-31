@@ -93,28 +93,34 @@
                 </div>
     
                 <div class="contact-form">
+                  <form action="https://api.web3forms.com/submit" method="POST">
                   <h3 class="title">Contact Us</h3>
+                  <input type="hidden" name="access_key" value="cd6fa562-a22c-4529-95ef-939f079bd67b">
                   <div class="row">
                     <input
                       type="text"
+                      name="First Name"
                       class="contact-input"
                       placeholder="First Name"
-                    />
+                      required
+                    >
                     <input
                       type="text"
+                      name="Last Name"
                       class="contact-input"
                       placeholder="Last Name"
-                    />
+                      required
+                    >
                   </div>
     
                   <div class="row">
-                    <input type="text" class="contact-input" placeholder="Phone" />
-                    <input type="email" class="contact-input" placeholder="Email" />
+                    <input type="text" name="Phone Number" class="contact-input" placeholder="Phone" required>
+                    <input type="email" name="email" class="contact-input" placeholder="Email" required>
                   </div>
 
                   <div class="row">
-                    <input type="text" class="contact-input" placeholder="Your Company" />
-                    <input type="text" class="contact-input" placeholder="Factory" />
+                    <input type="text" name="Company" class="contact-input" placeholder="Your Company">
+                    <input type="text" name="Factory" class="contact-input" placeholder="Factory">
                   </div>
     
                   <div class="row">
@@ -124,7 +130,9 @@
                       placeholder="Message"
                     ></textarea>
                   </div>
-                  <a href="#" class="btn">Send</a>
+                  <div class="h-captcha" data-captcha="true"></div>
+                  <button class="btn" type="submit">Submit</button>
+                  </form>
                 </div>
               </div>
             </div>
