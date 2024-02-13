@@ -311,7 +311,7 @@ nav.open .links {
 }
 .hero {
   background-color: var(--dark-one);
-  background-image: url("../img/jade.jpg");
+  background-image: url("../img/banner.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -327,6 +327,20 @@ nav.open .links {
   padding-top: 2rem;
   text-align: left;
   align-items: center;
+}
+.color-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--dark-three);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translate(-20px, -20px);
+  transition: bottom 1s;
+}
+.color-box:hover {
+  bottom: 40px;
 }
 
 .header-title {
@@ -992,7 +1006,7 @@ header .points2 {
 .contact:before {
   top: 0;
   height: 40%;
-  background: url("../img/map.png") center center / cover;
+  background: url("../img/map.webp") center center / cover;
 }
 
 .contact:after {
