@@ -79,7 +79,7 @@
                   <button class="filter-btn" data-filter=".brewery">Brewery</button>
                 </div>
 
-                <div class="project-container">  
+                <div class="project-container">  <!--projects-container-stacks-->
                   <div class="grid">
                     
                     <div class="project" data-name="p-1"> 
@@ -175,7 +175,7 @@
                     <div class="project" data-name="p-7">
                       <div class="grid-item beverage">
                         <div class="gallery-image">
-                          <img src="./img/projects/rockland-ice-rink/1.webp" alt="" />
+                          <img src="./img/projects/rockland-ice-rink/cover.webp" alt="" />
                           <div class="img-overlay">
                             <div class="plus"></div>
                             <div class="img-description">
@@ -236,11 +236,41 @@
                     <div class="project" data-name="p-11"> 
                       <div class="grid-item brewery beverage">
                         <div class="gallery-image">
-                          <img src="./img/projects/haven_brew/1.webp" alt="">
+                          <img src="./img/projects/haven_brew/hc.webp" alt="">
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
                                   <h3>Haven Beer Company</h3>
+                                  <h5>See Gallery</h5>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project" data-name="p-12"> 
+                      <div class="grid-item schools">
+                        <div class="gallery-image">
+                          <img src="./img/projects/doherty-hs/st.webp" alt="">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                  <h3>Doherty High School</h3>
+                                  <h5>See Gallery</h5>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project" data-name="p-13"> 
+                      <div class="grid-item universities">
+                        <div class="gallery-image">
+                          <img src="./img/projects/uconn-dining-hall/cover.webp" alt="">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                  <h3>UConn Dining Hall</h3>
                                   <h5>See Gallery</h5>
                                 </div>
                               </div>
@@ -258,7 +288,7 @@
             </div>
           </section>       
 
-          <div class="project-preview">   <!--products-preview-->
+          <div class="project-preview">   <!--projects-slider-->
         
             <div class="preview" data-target="p-1">
             
@@ -521,8 +551,11 @@
                     <div class="slider">
                       <div class="list">
                           <div class="item">
-                              <img src="./img/projects/rockland-ice-rink/1.webp" alt="">
+                              <img src="./img/projects/rockland-ice-rink/cover.webp" alt="">
                           </div>
+                          <div class="item">
+                            <img src="./img/projects/rockland-ice-rink/1.webp" alt="">
+                        </div>
                           <div class="item">
                               <img src="./img/projects/rockland-ice-rink/2.webp" alt="">
                           </div>
@@ -744,9 +777,81 @@
             
                             <h3>Haven Beer Company</h3>
                             <p>Hamden CT</p>
-                            <h5>#Amerikooler #Continental #Cres Cor #Krowne</h5>
+                            <h5>#BSI</h5>
                             <a href="./manufacturers.html" class="btn">Factories</a>
                           </div>
+
+                          <div class="preview" data-target="p-12">
+                
+                            <div class="slider">
+                              <div class="list">
+                                  <div class="item">
+                                  <img src="./img/projects/doherty-hs/st.webp" alt="">
+                                  </div>
+                                  <div class="item">
+                                      <img src="./img/projects/doherty-hs/1.webp" alt="">
+                                  </div>
+                                  <div class="item">
+                                    <img src="./img/projects/doherty-hs/2.webp" alt="">
+                                  </div>
+                                  <div class="item">
+                                    <img src="./img/projects/doherty-hs/3.webp" alt="">
+                                  </div>
+                                  <div class="item">
+                                    <img src="./img/projects/doherty-hs/4.webp" alt="">
+                                  </div>
+                              </div>
+                              <div class="close">
+                                  <button id="closes">X</button>
+                              </div>
+                              <div class="buttons">
+                                  <button type="button" onclick="prev(this)"><</button>
+                                  <button type="button" onclick="next(this)">></button>
+                              </div>
+               
+                            </div>
+              
+                              <h3>Doherty High School</h3>
+                              <p>Worcester MA</p>
+                              <h5>#BSI</h5>
+                              <a href="./manufacturers.html" class="btn">Factories</a>
+                            </div>
+
+                            <div class="preview" data-target="p-13">
+                
+                              <div class="slider">
+                                <div class="list">
+                                    <div class="item">
+                                      <img src="./img/projects/uconn-dining-hall/cover.webp" alt="">
+                                    </div>
+                                    <div class="item">
+                                      <img src="./img/projects/uconn-dining-hall/1.webp" alt="">
+                                    </div>
+                                    <div class="item">
+                                      <img src="./img/projects/uconn-dining-hall/2.webp" alt="">
+                                    </div>
+                                    <div class="item">
+                                      <img src="./img/projects/uconn-dining-hall/3.webp" alt="">
+                                    </div>
+                                    <div class="item">
+                                      <img src="./img/projects/uconn-dining-hall/4.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="close">
+                                    <button id="closes">X</button>
+                                </div>
+                                <div class="buttons">
+                                    <button type="button" onclick="prev(this)"><</button>
+                                    <button type="button" onclick="next(this)">></button>
+                                </div>
+                 
+                              </div>
+                
+                                <h3>UConn</h3>
+                                <p>Hartford CT</p>
+                                <h5>#BSI #Jade #CresCor #Ice-O-Matic</h5>
+                                <a href="./manufacturers.html" class="btn">Factories</a>
+                              </div>
     
         
         
